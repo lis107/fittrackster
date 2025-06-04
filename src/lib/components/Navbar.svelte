@@ -2,7 +2,6 @@
     import { onMount } from 'svelte';
   
     onMount(() => {
-      // Manuelles Bootstrap-Importieren (DOM bereit)
       import('bootstrap').then(({ Collapse }) => {
         const toggleButton = document.querySelector('.navbar-toggler');
         const collapseElement = document.getElementById('navbarNav');

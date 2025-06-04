@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 	import { Chart, BarController, BarElement, CategoryScale, LinearScale, Tooltip, Legend } from 'chart.js';
 
-	let { workouts } = $props(); // Runes Mode
+	let { workouts } = $props();
 
 	let chartEl;
 

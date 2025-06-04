@@ -1,12 +1,13 @@
 import { insertExercise, getAllWorkoutsBasic } from '$lib/server/db.js';
 import { redirect } from '@sveltejs/kit';
 
-/** @type {import('./$types').Actions} */
+/** @type {import('./$types').PageServerLoad} */
 export async function load() {
 	const workouts = await getAllWorkoutsBasic();
 	return { workouts };
 }
 
+/** @type {import('./$types').Actions} */
 export const actions = {
 	default: async ({ request }) => {
 		const data = await request.formData();

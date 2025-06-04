@@ -21,7 +21,7 @@
 		<div class="alert alert-success">Übung erfolgreich gespeichert!</div>
 	{/if}
 
-	<form on:submit|preventDefault method="POST" class="mb-5">
+	<form method="POST" class="mb-5">
 		<div class="mb-3">
 			<label for="name" class="form-label">Name der Übung</label>
 			<input

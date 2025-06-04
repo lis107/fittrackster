@@ -1,5 +1,5 @@
 <script>
-	let { workout } = $props(); // Runes Mode
+	let { workout } = $props();
 </script>
 
 <div class="card bg-dark text-white border-light h-100">
